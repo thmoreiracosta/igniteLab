@@ -19,7 +19,7 @@ const GET_LESSONS_BY_SLUG_QUERY = gql`
 }
 `
 
-interface GetLessonBySlugResponse {
+export interface GetLessonBySlugResponse {
   lesson: {
     title: string;
     videoId: string;
@@ -32,7 +32,7 @@ interface GetLessonBySlugResponse {
   }
 }
 
-interface VideoProps {
+export interface VideoProps {
   lessonSlug: string;
 }
 
@@ -133,7 +133,7 @@ export function Video(props: VideoProps) {
                   Acesse o material complementar para acelerar o seu desenvolvimento
                 </p>
               </div>
-              <div className="h-full p-6 flex items-center">
+              <div className="h-full p-6 flex items-center text-blue-500">
                 <CaretRight size={24} />
               </div>
             </a>
@@ -153,7 +153,7 @@ export function Video(props: VideoProps) {
                   Baixe wallpapers exclusivos do Ignite Lab e personalize a sua máquina
                 </p>
               </div>
-              <div className="h-full p-6 flex items-center">
+              <div className="h-full p-6 flex items-center text-blue-500">
                 <CaretRight size={24} />
               </div>
             </a>
