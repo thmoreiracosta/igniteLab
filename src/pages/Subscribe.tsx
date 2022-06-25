@@ -10,7 +10,7 @@ export function Subscribe() {
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-
+ 
   const [createSubscriber, { loading }] = useCreateSubscribeMutation();
 
   async function handleSubcribe(event: FormEvent) {
@@ -19,7 +19,7 @@ export function Subscribe() {
     await createSubscriber({
       variables: {
         name,
-        email,
+        email,       
       }
     });
 
@@ -113,12 +113,14 @@ export function Subscribe() {
               className="bg-gray-900 rounded px-5 h-14"
               type="text"
               placeholder="Seu nome completo..."
+              required={true}
               onChange={event => setName(event.target.value)}
             />
             <input
               className="bg-gray-900 rounded px-5 h-14"
               type="email"
               placeholder="Seu melhor e-mail..."
+              required={true}
               onChange={event => setEmail(event.target.value)}
             />
             <button
