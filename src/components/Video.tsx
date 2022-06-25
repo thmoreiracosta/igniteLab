@@ -4,8 +4,6 @@ import { CaretRight, DiscordLogo, FileArrowDown, Image, Lightning } from "phosph
 import { useGetLessonBySlugQuery } from '../graphql/generated';
 // import '@vime/core/themes/default.css';
 
-
-
 export interface VideoProps {
   lessonSlug: string;
 }
@@ -94,10 +92,11 @@ export function Video(props: VideoProps) {
         </div>
 
         <div className="gap-8 mt-20 grid grid-cols-2 ">
-          <div className="flex rounded border-2 border-gray-600 hover:border-green-700 transition-colors">
+          <div className="border-1 border-gray-600 hover:border-none transition-colors">
             <a href="https://www.notion.so/Material-complementar-56bc580dd6b14c57910adf092bd2760d"
               target="_blank"
-              className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
+              className="w-full xl:w-auto bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 md:justify-between hover:bg-gray-600 border-2 border-green-500 border-opacity-0
+              hover:-translate-y-2 hover:border-opacity-100 transitions-all duration-500 ease-in-out">
               <div className="bg-green-500 h-full p-6 flex items-center ">
                 <FileArrowDown size={40} />
               </div>
@@ -114,10 +113,11 @@ export function Video(props: VideoProps) {
               </div>
             </a>
           </div>
-          <div className="flex rounded border-2 border-gray-600 hover:border-green-700 transition-colors">
+          <div className="flex rounded border-1 border-gray-600 hover:border-none transition-colors">
             <a href="https://drive.google.com/drive/folders/1sdwmycoqhO-otxj7LmcPxIim_16XXXkH?usp=sharing"
               target="_blank"
-              className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
+              className="w-full xl:w-auto bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 md:justify-between hover:bg-gray-600 border-2 border-green-500 border-opacity-0
+              hover:-translate-y-2 hover:border-opacity-100 transitions-all duration-500 ease-in-out">
               <div className="bg-green-500 h-full p-6 flex items-center ">
                 <Image size={40} />
               </div>
