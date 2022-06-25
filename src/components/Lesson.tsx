@@ -14,12 +14,16 @@ interface LessonProps {
 
 
 export function Lesson(props: LessonProps) {
-  const { slug } = useParams<{ slug: string }>()
   const isLessonAvailable = isPast(props.availableAt);
-  const availableDateFormatted = format(props.availableAt, " EEEE' • 'd' de 'MMMM' • 'k'h'mm", {
-    locale: ptBR,
-  })
+  const availableDateFormatted = format(
+    props.availableAt,
+    " EEEE' • 'd' de 'MMMM' • 'k'h'mm",
+    {
+      locale: ptBR,
+    }
+  )
 
+  const { slug } = useParams<{ slug: string }>();
   const isActiveLesson = slug === props.slug;
 
   return (
@@ -28,7 +32,11 @@ export function Lesson(props: LessonProps) {
         {availableDateFormatted}
       </span>
 
-      <div className={`rounded border border-gray-500 p-4 mt-2 ${isActiveLesson ? 'bg-green-500' : ''} ${!isLessonAvailable ? 'cursor-not-allowed' : 'group-hover:bg-gray-500 group-hover:border-green-500 transition-colors'}`}>
+      <div className={`rounded border border-gray-500 p-4 mt-2          
+          ${isActiveLesson ? 'bg-green-500' : ''} 
+          ${!isLessonAvailable ? 'cursor-not-allowed' : 'group-hover:bg-gray-500 group-hover:border-green-500 transition-colors'}
+        `}> 
+
         <header className="flex items-center justify-between">
           {isLessonAvailable ? (
             <span className={`text-sm text-blue-500 font-medium flex items-center gap-2 ${isActiveLesson ? 'text-white' : ''}`}>
@@ -46,7 +54,9 @@ export function Lesson(props: LessonProps) {
             {props.type === 'live' ? 'AO VIVO' : 'AULA PRÁTICA'}
           </span>
         </header>
-        <strong className={`text-gray-200 mt-5 block ${isActiveLesson ? 'text-white' : ''} ${!isLessonAvailable ? 'cursor-not-allowed' : ''}`}>
+
+
+        <strong className={`text-gray-200 mt-5 block ${isActiveLesson ? 'text-slate-50' : ''} ${!isLessonAvailable ? 'cursor-not-allowed' : ''}`}>
           {props.title}
         </strong>
       </div>
