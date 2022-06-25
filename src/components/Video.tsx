@@ -95,7 +95,7 @@ export function Video(props: VideoProps) {
 
         <div className="gap-8 mt-20 grid grid-cols-2 ">
           <div className="flex rounded border-2 border-gray-600 hover:border-green-700 transition-colors">
-            <a href=""
+            <a href="https://www.notion.so/Material-complementar-56bc580dd6b14c57910adf092bd2760d"
               target="_blank"
               className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
               <div className="bg-green-500 h-full p-6 flex items-center ">
@@ -115,7 +115,7 @@ export function Video(props: VideoProps) {
             </a>
           </div>
           <div className="flex rounded border-2 border-gray-600 hover:border-green-700 transition-colors">
-            <a href=""
+            <a href="https://drive.google.com/drive/folders/1sdwmycoqhO-otxj7LmcPxIim_16XXXkH?usp=sharing"
               target="_blank"
               className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
               <div className="bg-green-500 h-full p-6 flex items-center ">
