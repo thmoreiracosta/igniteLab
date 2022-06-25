@@ -5,7 +5,7 @@
 <p align='center'>
   <img alt='' src='https://global-uploads.webflow.com/61d83a2ebb0ae01ab96e841a/629f88dc97a53624a1b5c110_aplication-ignitelabs%20(1).png'>
 </p><p align='center'>
-  <img alt='' src='https://i.imgur.com/HY6jD52.png'>
+  <img alt='' src='https://drive.google.com/file/d/14nTfxuTqeqjx9p5FniYA9rXV7EdBX0yQ/view?usp=sharing'>
 </p>
 
 ### 🚀 Desenvolvimento
