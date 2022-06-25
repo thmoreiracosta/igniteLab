@@ -1,15 +1,7 @@
-import { gql, useMutation, useQuery } from "@apollo/client";
 import { useState, FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
 import { Logo } from "../components/Logo";
-
-const CREATE_SUBSCRIBER_MUTATION = gql`
-  mutation CreateSubscribe ($name: String!, $email: String! ) {
-    createSubscriber(data: {name: $name, email: $email}) {
-      id
-    }
-  }
-`
+import { useCreateSubscribeMutation } from "../graphql/generated";
 
 export function Subscribe() {
   const navigate = useNavigate()
@@ -17,7 +9,7 @@ export function Subscribe() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
 
-  const [createSubscriber, { loading }] = useMutation(CREATE_SUBSCRIBER_MUTATION);
+  const [createSubscriber, { loading }] = useCreateSubscribeMutation();
 
   async function handleSubcribe(event: FormEvent) {
     event.preventDefault();
@@ -43,9 +35,6 @@ export function Subscribe() {
           <p className="mt-4 text-gray-200 leading-relaxed text-lg">
             Em apenas uma semana você vai dominar na prática uma das tecnologias mais utilizadas e com alta demanda para acessar as melhores oportunidades do mercado.
           </p>
-
-
-
           <div className="max-w-[180px] flex items-center justify-between mt-8">
             <div className="max-w-[180px] flex items-center justify-between">
               <div>
@@ -63,12 +52,10 @@ export function Subscribe() {
                   </defs>
                 </svg>
               </div>
-
               <div className="w-[120px] flex items-center justify-between mt-2 ml-2 text-xl p-2">
                 De 20 a 26 de junho
               </div>
             </div>
-
             <div className="w-[640px] flex items-center justify-between ml-8">
               <div>
                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -90,8 +77,6 @@ export function Subscribe() {
               </div>
             </div>
           </div>
-
-
           <div className="w-full max-w-[1280px] mt-2 block" >
             <p className="mb-4 mt-8 text-[17px]">
               Evento ministrado por:
@@ -116,9 +101,7 @@ export function Subscribe() {
                   @thmoreiracosta - FullStack Developer
                 </span>
               </div>
-
             </div>
-
           </div>
         </div>
         <div className="p-8 bg-gray-700 border border-gray-500 rounded">
@@ -145,20 +128,11 @@ export function Subscribe() {
             </button>
           </form>
         </div>
-
-
-
-
       </div>
-
-
       <div className="absolute ">
         <img src="/src/assets/react-icon.svg" alt="" />
       </div>
-
-
-
-      <img src="/src/assets/code-mokup.png" className="mt-0" alt="" />      
+      <img src="/src/assets/code-mokup.png" className="mt-0 w-[1280px]" alt="" />
     </div>
   )
 }
