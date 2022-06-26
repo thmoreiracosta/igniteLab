@@ -92,7 +92,7 @@ export function Video(props: VideoProps) {
         </div>
 
         <div className="gap-8 mt-20 grid grid-cols-2 ">
-          <div className="border-1 border-gray-600 hover:border-none transition-colors">
+          <div className="flex rounded border-1 border-gray-600 hover:border-none transition-colors">
             <a href="https://www.notion.so/Material-complementar-56bc580dd6b14c57910adf092bd2760d"
               target="_blank"
               className="w-full xl:w-auto bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 md:justify-between hover:bg-gray-600 border-2 border-green-500 border-opacity-0
