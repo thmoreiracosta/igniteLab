@@ -26,8 +26,8 @@ export function Video(props: VideoProps) {
   }
 
   const opts = {
-    height: '740',
-    width: '1080',
+    height: '854',
+    width: '1280',
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
       autoplay: 1,
@@ -37,14 +37,14 @@ export function Video(props: VideoProps) {
   return (
     <div className="flex-1">
       <div className="bg-black flex justify-center">
-        <div className="h-full w-full max-w-[1100px] max-h-[60vh] aspect-video">
+        <div className="h-full w-full max-w-[1280px] max-h-[60vh] aspect-video">
           {/* <Player> */}
           <YouTube videoId={data.lesson.videoId} opts={opts} />
           {/* </Player> */}
         </div>
       </div>
 
-      <div className="p-8 max-w-[1100px] mx-auto">
+      <div className="p-8 max-w-[1200px] mx-auto">
         <div className="flex items-start gap-16">
           <div className="flex-1">
             <h1 className="text-2xl font-bold">
