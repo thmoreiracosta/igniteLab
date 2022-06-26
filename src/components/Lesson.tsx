@@ -25,15 +25,15 @@ export function Lesson(props: LessonProps) {
 
   return (
     <>
-      <span className="text-gray-300 hover:text-gray-200">
-        {availableDateFormatted}
-      </span>
       {isLessonAvailable ? (
         <NavLink to={`/event/lesson/${props.slug}`} className="group">
+          <span className="text-gray-300 hover:text-gray-200">
+            {availableDateFormatted}
+          </span>
           <div className={`rounded border border-gray-500 p-4 mt-2          
           ${isActiveLesson ? 'bg-green-500 relative before:absolute before:content before:bg-green-500 before:p-2 before:rotate-45 before:top-[50%] before:left-[-8px]' : ''}          
           ${!isLessonAvailable ? 'cursor-not-allowed' : 'group-hover:bg-gray-500 group-hover:border-green-500 transition-colors'}
-        `}>
+          `}>
             <header className="flex items-center justify-between">
               <span className={`text-sm text-blue-500 font-medium flex items-center gap-2 ${isActiveLesson ? 'text-white' : ''}`}>
                 <CheckCircle size={20} />
