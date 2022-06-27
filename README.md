@@ -5,6 +5,42 @@
 <p align='center'>
   <img alt='' src='https://i.imgur.com/Iuhwd70.png'>
 </p>
+
+<p>
+Evento sediado pela @Rocketseat nos dias 20 a 26 de junho de 2022. Imersão incrível focada em ReactJS e muitas outras tecnologias descritas abaixo.
+</p>
+
+<h2>
+AULAS - DESCRIÇÕES
+</h2>
+
+### 📚 AULA 01
+- Setup da aplicação
+- Configuração do Vite
+- Configuração do tailwind
+- Configuração do graphCMS
+
+### 📚 AULA 02
+- Interface da sidebar
+- Interface do header
+- Configuração do ApolloClient
+- Listagem de aulas
+
+### 📚 AULA 03
+- Configuração do vídeo
+- Geração de query para o graphCMS
+- Configuração de Roteamentos
+
+### 📚 AULA 04
+- Inscrição do graphQL com mutations
+- Date-fns
+
+### 📚 AULA 05
+- Depoy
+- GraphQL Codegeneration
+
+
+
 <p align='center'>
   <img alt='' src='https://i.imgur.com/0VB9Hv5.png'>
 </p>
@@ -29,6 +65,7 @@
 - TailwindCSS
 - ApolloClient
 - Vercel
+- Phosphor Icons
 
 ### ⚙️ Funcionalidades
 - Inscrição, requisições e listagem de dados com GraphQL
@@ -38,9 +75,10 @@
 
 ### 🧩 Incrementos
 - Melhorei tela de Subscribe
-- Ampliei windowsView das aulas
+- Ampliei e melhorei windowsView e plataforma das aulas
 - Inseri o bloqueio de acesso a aulas ainda não liberadas
 - Melhorei animações de introduzi links nos botões de wallpapers e materiais
 - Ajustes as rotas da vercel
+
 
 
