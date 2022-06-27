@@ -49,24 +49,29 @@ export function Lesson(props: LessonProps) {
           </div>
         </NavLink>
       ) : (
-        <div className="cursor-not-allowed rounded-md border border-gray-500 mb-6 mt-2 hover:not:border-green-500 focus:outline-none opacity-30">
-          <a href="#" className="pointer-events-none">
-            <div className="p-4">
-              <header className="flex items-center justify-between">
-                <span className={`text-sm text-orange-500 font-medium flex items-center gap-2 cursor-not-allowed ${!isLessonAvailable ? 'cursor-not-allowed' : ''}`}>
-                  <Lock size={20} />
-                  Em breve
-                </span>
-                <span className="text-xs rounded py-[.125rem] px-2 text-white border border-green-300">
-                  {props.type === 'live' ? 'AO VIVO' : 'AULA PRÁTICA'}
-                </span>
-              </header>
-              <strong className="text-gray-200 text-left mt-5 block">
-                {props.title}
-              </strong>
-            </div>
-          </a>
-        </div>
+
+        <span className="text-gray-300 hover:text-gray-200">
+          {availableDateFormatted}
+          <div className="cursor-not-allowed rounded-md border border-gray-500 mb-6 mt-2 hover:not:border-green-500 focus:outline-none opacity-30">
+            <a href="#" className="pointer-events-none">
+              <div className="p-4">
+                <header className="flex items-center justify-between">
+                  <span className={`text-sm text-orange-500 font-medium flex items-center gap-2 cursor-not-allowed ${!isLessonAvailable ? 'cursor-not-allowed' : ''}`}>
+                    <Lock size={20} />
+                    Em breve
+                  </span>
+                  <span className="text-xs rounded py-[.125rem] px-2 text-white border border-green-300">
+                    {props.type === 'live' ? 'AO VIVO' : 'AULA PRÁTICA'}
+                  </span>
+                </header>
+                <strong className="text-gray-200 text-left mt-5 block">
+                  {props.title}
+                </strong>
+              </div>
+            </a>
+          </div>
+        </span>
+
       )}
     </>
   )
