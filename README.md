@@ -35,3 +35,12 @@
 - Reprodução de vídeo-aulas by Rocketseat na plataforma
 - Material didático 
 - Wallpapers
+
+### 🧩 Incrementos
+- Melhorei tela de Subscribe
+- Ampliei windowsView das aulas
+- Inseri o bloqueio de acesso a aulas ainda não liberadas
+- Melhorei animações de introduzi links nos botões de wallpapers e materiais
+- Ajustes as rotas da vercel
+
+
